@@ -44,6 +44,7 @@ export default function Abastecimento() {
             <option selected value={null}>Modelo do Carro</option>
 
             <option value="Honda">Honda</option>
+            <option value="Sedan">Sedan</option>
           </select>
           <p></p>
           <label for="veiculo">Veiculo:</label>
