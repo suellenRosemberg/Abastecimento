@@ -3,26 +3,15 @@ export default function Lancamento(){
 
 return (
     <div>
-        <form action="/api/lancamento/postLancamento" method="post">
+        <form action="/" method="post">
         <label for="modelo">Modelo:</label>
-        <select class="form-select" aria-label="Default select example" name="modelo">
+        <select class="form-select"  name="modelo">
           <option selected value={null}>Modelo do Carro</option>
-          {modeloVeiculo.map((veiculo) => {
-            return (
-              <option value={veiculo.fabricante}>{veiculo.fabricante}</option>
-            );
-          })}
+            
+              <option value="Honda">Honda</option>
         </select>
         <p></p>
         <label for="veiculo">Veiculo:</label>
-        <select class="form-select" aria-label="Default select example" name="veiculo_id">
-          <option selected value={null}>Modelo do Carro</option>
-          {modeloVeiculo.map((veiculo) => {
-            return <option value={veiculo.id}>{veiculo.nome}</option>;
-          })}
-        </select>
-        <p></p>
-
           
         <label for="cnpjdoPosto" class="form-label">CNPJ do Posto</label>
         <input type="text"  name="cnpjdoPosto" class="form-control"  required/>
