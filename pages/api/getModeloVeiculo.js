@@ -1,10 +1,11 @@
-import Modelo_veiculo from '../../src/models/modelo_veiculo';
+import Modelo_veiculo from "../../src/models/ModeloVeiculo";
+
 
 export default async function handler(req, res) {
 
   try {
 
-    const data = await Modelo_veiculo.findAll();
+    const data = await  Modelo_veiculo.findAll();
 
 
     res.status(200).json({ Modelo_veiculo: data });

@@ -2,7 +2,7 @@ import { INTEGER, STRING, Sequelize } from 'sequelize';
 
 import database from '../../pages/api/db2';
 
-const Modelo_veiculo = database.define('modelo_veiculo',
+const ModeloVeiculo = database.define('modelo_veiculos',
 
     {      
         
@@ -27,7 +27,7 @@ const Modelo_veiculo = database.define('modelo_veiculo',
 )
 
 
-export default Modelo_veiculo;
+export default ModeloVeiculo;
 
 
 

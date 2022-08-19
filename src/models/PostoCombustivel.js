@@ -1,8 +1,8 @@
-import { INTEGER, STRING, Sequelize} from 'sequelize';
+import { INTEGER, STRING } from 'sequelize';
 
 import database from '../../pages/api/db2';
 
-const Posto_de_combustivel = database.define('posto_de_combustivel',
+const PostoCombustivel = database.define('posto_de_combustivel',
     {      
         
         id:
@@ -46,5 +46,5 @@ const Posto_de_combustivel = database.define('posto_de_combustivel',
 )
 
 
-export default Posto_de_combustivel;
+export default PostoCombustivel;
 

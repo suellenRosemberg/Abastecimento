@@ -1,10 +1,9 @@
-import { INTEGER, DOUBLE, TIMESTAMP, Sequelize} from 'sequelize';
+import { INTEGER, DOUBLE, TIMESTAMP} from 'sequelize';
 
-import database from '../../pages/api/db2';
+import database from '../../pages/api/db2'
 
-const Lancamento_abastecimento = database.define('lancamento_abastecimento',
-    {      
-        
+const LancamentoAbastecimento = database.define('lancamento_abastecimento',
+    {            
         id:
         {
             type: INTEGER,
@@ -41,9 +40,7 @@ const Lancamento_abastecimento = database.define('lancamento_abastecimento',
         }
     }
 )
-
-
-export default Lancamento_abastecimento;
+export default LancamentoAbastecimento;
 
 
   

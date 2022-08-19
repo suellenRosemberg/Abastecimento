@@ -1,9 +1,8 @@
-import Veiculo from '../../src/models/veiculo';
+import Veiculo from "../../src/models/Veiculo";
 
 export default async function handler(req, res) {
 
   try {
-
     const data = await Veiculo.findAll();
 
 
